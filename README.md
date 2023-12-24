@@ -55,3 +55,21 @@
 
 ## For test you can use Mumbai:
     node chains/mumbai.js <contractAddress> <receiver>
+
+## Additional features:
+1. At this point, the script will send the token that was last received by the address. If for any reason you want to send the tokens in a different order, you can directly enter the tokenID when calling the script.
+
+```
+    node chains/ethereum.js <contractAddress> <receiver> <tokenId>
+```
+
+But also you should leave only one signer in the array (who owns the token).
+
+2. You can change provider to your node. Now script use public nodes for each chains.
+```
+const provider = new ethers.JsonRpcProvider(
+  "your-rpc-provider"
+);
+```
+
+
