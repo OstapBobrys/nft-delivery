@@ -42,20 +42,16 @@
             ];
 ## Step 4. Call script:
     ETH: 
-    ```
     node chains/ethereum.js <contractAddress> <receiver>
-    ```
+
     BSC: 
-    ```
     node chains/bsc.js <contractAddress> <receiver>
-    ```
+
     Polygon: 
-    ```
     node chains/polygon.js <contractAddress> <receiver>
-    ```
+
     Arbitrum: 
-    ```
     node chains/arbitrum.js <contractAddress> <receiver>
-    ```
+
 ## For test you can use Mumbai:
     node chains/mumbai.js <contractAddress> <receiver>
